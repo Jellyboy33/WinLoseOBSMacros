@@ -8,6 +8,8 @@ Description: A counter that updates when specific button is read from the Keyboa
 #include <string>
 using namespace std;
 
+int counter_help();
+
 //Main function
 int main(){
     
@@ -18,10 +20,10 @@ int main(){
     //counter initialized to 0
     int counter = 0;
     cout << counter << endl;
-    counter += counter();
+    counter += counter_help();
     cout << counter << endl;
 }
 
-int counter(){
+int counter_help(){
     return 1;
 }
